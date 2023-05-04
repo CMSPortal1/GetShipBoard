@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Project(failed)">
+    <classes>
+      <class name="com.testcases.MeetAhsan2022.Projects">
+        <methods>
+          <include name="MarkComplete"/>
+          <include name="AddColumns"/>
+        </methods>
+      </class> <!-- com.testcases.MeetAhsan2022.Projects -->
+    </classes>
+  </test> <!-- Project(failed) -->
+</suite> <!-- Failed suite [Suite] -->

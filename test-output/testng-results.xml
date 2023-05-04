@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="19" passed="13" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-03T12:59:13 PKT" name="Suite" finished-at="2022-07-03T13:00:17 PKT" duration-ms="63673">
+    <groups>
+      <group name="Project">
+        <method signature="Projects.CreateProject()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" name="CreateProject" class="com.testcases.MeetAhsan2022.Projects"/>
+        <method signature="Projects.ProjectMenu()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" name="ProjectMenu" class="com.testcases.MeetAhsan2022.Projects"/>
+      </group> <!-- Project -->
+      <group name="Login">
+        <method signature="Login.ValidLogin()[pri:0, instance:com.testcases.MeetAhsan2022.Login@1151e434]" name="ValidLogin" class="com.testcases.MeetAhsan2022.Login"/>
+      </group> <!-- Login -->
+      <group name="Browser">
+        <method signature="Configurations.Browser()[pri:0, instance:com.testcases.MeetAhsan2022.Configurations@1b11171f]" name="Browser" class="com.testcases.MeetAhsan2022.Configurations"/>
+      </group> <!-- Browser -->
+    </groups>
+    <test started-at="2022-07-03T12:59:13 PKT" name="Test" finished-at="2022-07-03T12:59:45 PKT" duration-ms="32017">
+      <class name="com.testcases.MeetAhsan2022.Login">
+        <test-method signature="InvalidLogin()[pri:0, instance:com.testcases.MeetAhsan2022.Login@1151e434]" started-at="2022-07-03T12:59:20 PKT" name="InvalidLogin" description="Invalid Login" finished-at="2022-07-03T12:59:28 PKT" duration-ms="7298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method signature="EmptyLoginFieldsTest()[pri:0, instance:com.testcases.MeetAhsan2022.Login@1151e434]" started-at="2022-07-03T12:59:28 PKT" name="EmptyLoginFieldsTest" description="Empty Login FieldsTest" finished-at="2022-07-03T12:59:35 PKT" duration-ms="7293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyLoginFieldsTest -->
+        <test-method signature="EmptyEmailTest()[pri:0, instance:com.testcases.MeetAhsan2022.Login@1151e434]" started-at="2022-07-03T12:59:35 PKT" name="EmptyEmailTest" description="Empty Email field Test" finished-at="2022-07-03T12:59:41 PKT" duration-ms="6015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyEmailTest -->
+        <test-method signature="ValidLogin()[pri:0, instance:com.testcases.MeetAhsan2022.Login@1151e434]" started-at="2022-07-03T12:59:41 PKT" name="ValidLogin" description="Valid Login" finished-at="2022-07-03T12:59:45 PKT" duration-ms="4213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+      </class> <!-- com.testcases.MeetAhsan2022.Login -->
+      <class name="com.testcases.MeetAhsan2022.Configurations">
+        <test-method signature="Browser()[pri:0, instance:com.testcases.MeetAhsan2022.Configurations@1b11171f]" started-at="2022-07-03T12:59:13 PKT" name="Browser" finished-at="2022-07-03T12:59:20 PKT" duration-ms="7141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+      </class> <!-- com.testcases.MeetAhsan2022.Configurations -->
+    </test> <!-- Test -->
+    <test started-at="2022-07-03T12:59:45 PKT" name="Project" finished-at="2022-07-03T13:00:01 PKT" duration-ms="15870">
+      <class name="com.testcases.MeetAhsan2022.Projects">
+        <test-method signature="ProjectMenu()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" started-at="2022-07-03T12:59:45 PKT" name="ProjectMenu" finished-at="2022-07-03T12:59:48 PKT" duration-ms="3054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProjectMenu -->
+        <test-method signature="CreateProject()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" started-at="2022-07-03T12:59:48 PKT" name="CreateProject" description="Create Project" finished-at="2022-07-03T13:00:01 PKT" duration-ms="12730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProject -->
+        <test-method signature="AddColumns()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" started-at="2022-07-03T13:00:01 PKT" name="AddColumns" description="Add Column" finished-at="2022-07-03T13:00:01 PKT" duration-ms="51" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div[1]/input"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'snx-lap-102', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.s39oEV}, goog:chromeOptions: {debuggerAddress: localhost:34321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc69f446a8bef10ad94ddcf379cc65e4
+*** Element info: {Using=xpath, value=//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div[1]/input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div[1]/input"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'snx-lap-102', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.s39oEV}, goog:chromeOptions: {debuggerAddress: localhost:34321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc69f446a8bef10ad94ddcf379cc65e4
+*** Element info: {Using=xpath, value=//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div[1]/input}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.testcases.MeetAhsan2022.Projects.AddColumns(Projects.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddColumns -->
+        <test-method signature="MarkComplete()[pri:0, instance:com.testcases.MeetAhsan2022.Projects@4b45a2f5]" started-at="2022-07-03T13:00:01 PKT" name="MarkComplete" description="Check mark completed" finished-at="2022-07-03T13:00:01 PKT" duration-ms="19" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div/a[1]"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'snx-lap-102', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.s39oEV}, goog:chromeOptions: {debuggerAddress: localhost:34321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc69f446a8bef10ad94ddcf379cc65e4
+*** Element info: {Using=xpath, value=//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div/a[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div/a[1]"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'snx-lap-102', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.s39oEV}, goog:chromeOptions: {debuggerAddress: localhost:34321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc69f446a8bef10ad94ddcf379cc65e4
+*** Element info: {Using=xpath, value=//div[@id='app']/div[3]/main/div[2]/div[1]/div/div[2]/div/a[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.testcases.MeetAhsan2022.Projects.MarkComplete(Projects.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MarkComplete -->
+      </class> <!-- com.testcases.MeetAhsan2022.Projects -->
+    </test> <!-- Project -->
+    <test started-at="2022-07-03T13:00:01 PKT" name="Dashboard" finished-at="2022-07-03T13:00:17 PKT" duration-ms="15742">
+      <class name="com.testcases.MeetAhsan2022.Configurations">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.testcases.MeetAhsan2022.Configurations@1b11171f]" started-at="2022-07-03T13:00:17 PKT" name="TearDown" finished-at="2022-07-03T13:00:17 PKT" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.testcases.MeetAhsan2022.Configurations -->
+      <class name="com.testcases.MeetAhsan2022.Dashboard">
+        <test-method signature="DashboardMenu()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:01 PKT" name="DashboardMenu" description="Dashboard menu" finished-at="2022-07-03T13:00:04 PKT" duration-ms="3054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardMenu -->
+        <test-method signature="Count_project_taskinloop()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:04 PKT" name="Count_project_taskinloop" description="LoopCount to find project" finished-at="2022-07-03T13:00:07 PKT" duration-ms="3168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Count_project_taskinloop -->
+        <test-method signature="ViewTotalProjects()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:07 PKT" name="ViewTotalProjects" description="View Total Project List" finished-at="2022-07-03T13:00:07 PKT" depends-on-methods="com.testcases.MeetAhsan2022.Dashboard.DashboardMenu" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewTotalProjects -->
+        <test-method signature="ViewTotalTasks()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:07 PKT" name="ViewTotalTasks" description="View Total Task List" finished-at="2022-07-03T13:00:10 PKT" depends-on-methods="com.testcases.MeetAhsan2022.Dashboard.DashboardMenu" duration-ms="3151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewTotalTasks -->
+        <test-method signature="ViewOpenTasks()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:10 PKT" name="ViewOpenTasks" description="View Open Task List" finished-at="2022-07-03T13:00:14 PKT" depends-on-methods="com.testcases.MeetAhsan2022.Dashboard.DashboardMenu" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewOpenTasks -->
+        <test-method signature="ViewCompletedTasks()[pri:0, instance:com.testcases.MeetAhsan2022.Dashboard@368247b9]" started-at="2022-07-03T13:00:14 PKT" name="ViewCompletedTasks" description="View Completed Task List" finished-at="2022-07-03T13:00:17 PKT" depends-on-methods="com.testcases.MeetAhsan2022.Dashboard.DashboardMenu" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewCompletedTasks -->
+      </class> <!-- com.testcases.MeetAhsan2022.Dashboard -->
+    </test> <!-- Dashboard -->
+  </suite> <!-- Suite -->
+</testng-results>

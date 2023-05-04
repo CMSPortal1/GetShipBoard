@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	
+    <classes>
+	<class name="com.testcases.MeetAhsan2022.Configurations"/>
+      <class name="com.testcases.MeetAhsan2022.Login">
+		<methods>
+		<include name="InvalidLogin"></include>
+		<include name="EmptyLoginFieldsTest"></include>
+		<include name="EmptyEmailTest"></include>
+		<include name="ValidLogin"></include>
+		</methods>
+      </class>
+	   
+    </classes>
+  </test> <!-- Test -->
+
+
+	<test name="Project">
+		<!-- Project Class-->
+	 <classes>
+	  <class name="com.testcases.MeetAhsan2022.Projects">
+        <methods>
+		 <include name="ProjectMenu"></include>
+		 <include name="CreateProject"></include>
+		 <include name="AddColumns"></include>
+		 <include name="MarkComplete"></include>
+		<!-- <include name="CancelProject"></include>
+		<include name="Validate_SaveProject"></include>
+		 <include name="ApplysearchFilter"></include>
+		 <include name="AdvanceFilters"></include>--> 
+		 
+		 </methods>
+       </class> 
+ 	</classes>
+	</test>
+
+
+<test name="Dashboard">
+	<classes>
+	<!-- Dashboard Class-->
+		<class name="com.testcases.MeetAhsan2022.Dashboard">
+		<methods>
+		<include name="DashboardMenu"></include>
+		<include name="ViewTotalProjects"></include>
+		<include name="ViewTotalTasks"></include>
+		<include name="ViewOpenTasks"></include>
+		<include name="ViewCompletedTasks"></include>
+		<include name="Count_project_taskinloop"></include>
+		</methods>
+		</class>
+	</classes>
+</test>
+</suite> <!-- Suite -->
